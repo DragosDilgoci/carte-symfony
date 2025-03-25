@@ -1,5 +1,4 @@
 <?php
-// src/Controller/Api/AuthController.php
 
 namespace App\Controller\Api;
 
@@ -12,7 +11,7 @@ use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/api')]
-class AuthController extends AbstractController
+class RegisterController extends AbstractController
 {
     #[Route('/register', name: 'api_register', methods: ['POST'])]
     public function register(

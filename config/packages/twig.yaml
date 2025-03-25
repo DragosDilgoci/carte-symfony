@@ -1,6 +1,7 @@
 twig:
+    default_path: '%kernel.project_dir%/templates'
     file_name_pattern: '*.twig'
 
-when@test:
-    twig:
-        strict_variables: true
+    # Activează extensia pentru Webpack Encore (automat, dacă bundle-ul e instalat)
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'

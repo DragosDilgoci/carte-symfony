@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/api/checkout')]
+#[Route('/checkout')]
 class CheckoutController extends AbstractController
 {
     public function __construct(private PaymentService $paymentService) {}
